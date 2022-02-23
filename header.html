@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./app/css/scouts.css" />
+    <script src="./app/js/scouts.js"></script>
+  </head>
+  <body>
+    <header class="sc-sticky-header">
+      <nav
+        class="navbar navbar-expand-sm navbar-default bg-primary align-items-start py-2"
+        role="navigation"
+      >
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header d-flex align-items-center">
+            <a
+              class="navbar-brand abs m0 ml5-xs p0"
+              href="https://www.scouting.org/"
+            >
+              <img
+                alt="Logo Boy Scouts of America"
+                src="https://www.scouting.org/wp-content/themes/bsa-child/media/images/logo-shield@3x.png"
+              />
+            </a>
+            <div id="navtext" class="d-none d-md-inline-block">
+              BOY SCOUTS OF AMERICA
+            </div>
+          </div>
+          <div class="d-sm-none ml-auto">
+            <!-- Hambuger menu mobile -->
+            <a href="#" class="sc-hamburger-button sc-hamburger-button-mobile">
+              <div class="sc-hamburger-inner">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <!-- Main links mobile -->
+            <div id="sc-megamenu-mobile-deco" class="navbar navbar-expand">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://beascout.scouting.org?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing"
+                    >Join</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://donations.scouting.org/#/national/"
+                    >Give</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.scoutshop.org/">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://my.scouting.org/"
+                    >My.Scouting Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse navbar-ex1-collapse justify-content-end pr-md-0"
+          >
+            <!-- Main links desktop / tablets -->
+            <ul class="nav navbar-nav scouting-nav-top">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing"
+                  >Join</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://donations.scouting.org/#/national/"
+                  >Give</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.scoutshop.org/">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://my.scouting.org/"
+                  >My.Scouting Login</a
+                >
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+              <li>
+                <!-- Hambuger menu desktop / tablets -->
+                <a href="#" class="sc-hamburger-button">
+                  <div class="sc-hamburger-inner">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span class="sc-hamburger-text"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+      </nav>
+
+      <!-- Megamenu -->
+      <div
+        id="sc-megamenu"
+        class="container-fluid pt-3 pb-3 pt0-xs pb0-xs"
+        style="display: none"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 d-none d-sm-flex align-items-center justify-content-center flex-row d-lg-none"
+            >
+              <h6 class="sc-mobile-menu-item-toggler mr-3">
+                <a href="https://my.scouting.org/">
+                  <i class="fa fa-user mt3 mr15" aria-hidden="true"></i>
+                  <span>My.Scouting Login</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none fr"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <a
+                href="https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_now_MM&utm_campaign=ongoing"
+                class="btn btn-danger my-3 px-5 py-2"
+                >JOIN NOW</a
+              >
+            </div>
+            <div class="col-sm-3 col-lg-2 offset-lg-1 order-1">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/programs/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>Scouting Programs</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a href="https://www.scouting.org/programs/cub-scouts/"
+                    >Cub Scouting</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/programs/scouts-bsa/"
+                    >Scouts BSA</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/programs/venturing/"
+                    >Venturing</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/programs/sea-scouts/"
+                    >Sea Scouting</a
+                  >
+                </li>
+                <li><a href="https://www.exploring.org/">Exploring</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-lg-2 offset-lg-1 order-6">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/training/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>Training</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a href="https://www.scouting.org/training/youth-protection/"
+                    >Youth Protection</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/training/adult/"
+                    >Adult Training</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/training/youth/"
+                    >Youth Training</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/training/youth-protection/cyber-chip/"
+                    >Cyber Chip</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-lg-2 order-2">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/health-and-safety/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>Scouting Safely</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a href="https://www.scouting.org/health-and-safety/gss/"
+                    >Guide to Safe Scouting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/health-and-safety/incident-report/"
+                    >Incident Reporting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/health-and-safety/safety-moments/"
+                    >Safety Moments</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/health-and-safety/ahmr/"
+                    >Annual Health &amp; Medical Record</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-lg-2 order-7">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/resources/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>Scouting Resources </span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a href="https://www.scouting.org/commissioners/"
+                    >Commissioners</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/merit-badges/"
+                    >Merit Badges</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/"
+                    >Eagle Workbook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/international/"
+                    >International Scouting</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/council-support/"
+                    >Council Support</a
+                  >
+                </li>
+                <li><a href="https://scoutingwire.org">Scouting Wire</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3 col-lg-2 order-3">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/awards/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>Awards</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a href="https://www.scouting.org/awards/awards-central/"
+                    >Awards Central</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/awards/scholarships/"
+                    >Scholarships</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/stem-nova-awards/"
+                    >STEM Nova Awards</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/outdoor-programs/outdoor-ethics/awards/"
+                    >Outdoor Ethics Awards</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/resources/info-center/insignia-guide/"
+                    >Guide to Awards &amp; Insignia</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-lg-2 order-8">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/outdoor-programs/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>Outdoor Programs</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a
+                    href="https://www.scouting.org/outdoor-programs/properties/"
+                    >Properties</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/outdoor-programs/outdoor-ethics-guide/"
+                    >Outdoor Ethics Guide</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/outdooradventures/"
+                    >Outdoor Adventures</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-lg-2 order-4">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/about/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>About the BSA</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a href="https://www.scouting.org/about/diversity-inclusion/"
+                    >Diversity &amp; Inclusion</a
+                  >
+                </li>
+                <li><a href="https://www.scouting.org/careers/">Careers</a></li>
+                <li>
+                  <a
+                    href="https://www.scouting.org/about/local-council-locator/"
+                    >Find a Local Council</a
+                  >
+                </li>
+                <li>
+                  <a href="https://scoutingnewsroom.org">Scouting Newsroom</a>
+                </li>
+                <li>
+                  <a href="https://www.bsarestructuring.org"
+                    >BSA Restructuring</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/about/contact-us/"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-lg-2 order-9">
+              <!-- Youth Safety -->
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://www.scouting.org/health-and-safety/"
+                >
+                  <i class="fa fa-compass mt3 mr15" aria-hidden="true"></i>
+                  <span>Youth Safety</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <ul class="sc-megamenu-list fl w100">
+                <li>
+                  <a href="https://www.scouting.org/health-and-safety/gss/">
+                    Guide to Safe Scouting
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.scouting.org/training/youth-protection/">
+                    Youth Protection Training
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3 col-lg-2 d-none d-lg-block order-5">
+              <h6 class="sc-mobile-menu-item-toggler fl m0 p15-xs w100">
+                <a
+                  class="sc-title-link d-flex align-items-start"
+                  href="https://my.scouting.org"
+                >
+                  <i class="fa fa-user mt3 mr15" aria-hidden="true"></i>
+                  <span>My.Scouting Login</span>
+                  <i
+                    class="fa fa-angle-down d-sm-none ml-auto"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </h6>
+              <a
+                href="https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_now_MM&utm_campaign=ongoing"
+                class="btn btn-default sc-btn-danger dib w100 mt30"
+                >JOIN NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
