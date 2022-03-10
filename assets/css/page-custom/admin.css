@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+# Screen Elements
+--------------------------------------------------------------*/
+#dashboard {display: none;}
+#login {display: none;}
+#accountBtn {display: none;}
+#dashboardNav {display: none;}
+#eaglesNav {display: none;}
+#newsNav {display: none;}
+#navTitle {display: none;}
+
+/*--------------------------------------------------------------
+# Eagle Elements
+--------------------------------------------------------------*/
+#addEagle {margin-top: 5px;}
+#removeEagle {margin-top: 45px;}
+#allEagles {vertical-align: top;}
+
+/*--------------------------------------------------------------
+# News Elements
+--------------------------------------------------------------*/
+#addArticle {margin-top: 5px;}
+#updateArticle {margin-top: 45px;}
+#allArticles {vertical-align: top;}
+
+/*--------------------------------------------------------------
+# Page Elements
+--------------------------------------------------------------*/
+.editPage {
+    display: none;
+    margin-top: 50px;
+    padding-bottom: 0;
+    height: 55vh;
+}
+
+.footer {
+    padding: 0;
+}
+
+.table-responsive {
+    height: 55vh;
+}
+
+.dateCol {
+    width: 5%;
+}
+
+.titleCol {
+    width: 15%;
+}
+
+.imgCol {
+    width: 15%;
+}
+
+.bodyCol {
+    overflow: scroll;
+    overflow-x: hidden;
+    /*text-overflow: ellipsis;*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.card-body form {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.sidebar .nav img {
+    font-size: 24px;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #a9afbb;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #3C4858;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #106eea;
+    border-top-color: #3C4858;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
