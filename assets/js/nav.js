@@ -6,13 +6,29 @@ initializeApp(firebaseConfig);
 
 const dbRef = ref(getDatabase());
 
+let eagles = false;
+
+get(child(dbRef, `troop6059/eagles/`)).then((snapshot) => {
+    if (snapshot.exists()) {
+        var items = snapshot.val();
+
+        if (items.length >= 1) {
+            eagles = true;
+        }
+    } else {
+        console.log("No data available");
+    }
+}).catch((error) => {
+    console.error(error);
+});
+
 get(child(dbRef, `troop6059/nav/`)).then((snapshot) => {
     if (snapshot.exists()) {
         let nav = document.getElementById("links");
         let items = snapshot.val();
         for (let i = 0; i < items.length; i++) {
             if (items[i].length === 1) {
-                if (items[i][0].properties === "show") {
+                if (items[i][0].properties === "show" || (items[i][0].text === "Eagles" && eagles)) {
                     let listItem = document.createElement("li");
                     nav.appendChild(listItem);
 
@@ -71,7 +87,7 @@ get(child(dbRef, `troop6059/nav/`)).then((snapshot) => {
                             header = true;
                         }
                     }
-                    else if (items[i][j].properties === "show") {
+                    else if (items[i][j].properties === "show" || (items[i][0].text === "Eagles" && eagles)) {
                         if (header === false) {
                             if (j === items[i].length - 1) {
                                 let listItem = document.createElement("li");
