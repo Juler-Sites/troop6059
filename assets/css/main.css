@@ -1,0 +1,17 @@
+body {
+    background-color: #FCCAA1;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+@font-face {
+    font-family:XfinityStandard;
+    src:url(https://static.cimcontent.net/common-web-assets/fonts/xfinity-standard-optimized/xfinitystandard-exlt.woff2) format("woff2"),
+    url(https://static.cimcontent.net/common-web-assets/fonts/xfinity-standard-optimized/xfinitystandard-exlt.woff) format("woff");
+    font-weight:200;
+    font-style:normal
+}
+
+.body-content {
+    margin: 50px;
+}
