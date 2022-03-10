@@ -1,0 +1,9 @@
+@import url(nav.css);
+
+.outer {
+    margin-left: -82.6667px;
+    margin-right: -82.3333px;
+    padding-left: 82.6667px;
+    padding-right: 82.3333px;
+    border-left: 0; border-right: 0;
+}
