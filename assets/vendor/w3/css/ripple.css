@@ -1,0 +1,6 @@
+.w3-ripple:active {
+  opacity: 0.5;
+}
+.w3-ripple {
+  transition: opacity 0s;
+}

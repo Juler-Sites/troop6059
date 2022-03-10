@@ -1,0 +1,22 @@
+@import url(nav.css);
+
+#myVideo {
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 1%;
+
+}
+
+@media (max-width: 800px) {
+    /* low horizontal res */
+    #myVideo {
+        width: 90%;
+        margin-left: 5%;
+        margin-right:5%;
+
+    }
+
+}
