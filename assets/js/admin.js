@@ -53,8 +53,9 @@ get(child(dbRef, `troop6059/eagles/`)).then((snapshot) => {
 
         numEagles = items.length;
     } else {
+        numEagles = 0;
         console.log("No data available");
-        document.getElementById("numArticles").innerText = numEagles;
+        document.getElementById("numEagles").innerText = numEagles;
     }
 }).catch((error) => {
     console.error(error);
@@ -104,30 +105,24 @@ function viewLogin() {
     document.getElementById("login-view").style.display = "block";
     document.getElementById("dashboard").style.display = "none";
     document.getElementById("eagles").style.display = "none";
-    document.getElementById("news").style.display = "none";
     document.getElementById("accountBtn").style.display = "none";
     document.getElementById("navTitle").innerText = "";
     document.getElementById("dashboardNav").classList.remove("active");
     document.getElementById("dashboardNav").style.display = "none";
     document.getElementById("eaglesNav").classList.remove("active");
     document.getElementById("eaglesNav").style.display = "none";
-    document.getElementById("newsNav").classList.remove("active");
-    document.getElementById("newsNav").style.display = "none";
 }
 
 function loggedIn() {
     document.getElementById("login-view").style.display = "none";
     document.getElementById("dashboard").style.display = "block";
     document.getElementById("eagles").style.display = "none";
-    document.getElementById("news").style.display = "none";
     document.getElementById("accountBtn").style.display = "block";
     document.getElementById("navTitle").innerText = "Dashboard";
     document.getElementById("dashboardNav").classList.add("active");
     document.getElementById("dashboardNav").style.display = "block";
     document.getElementById("eaglesNav").classList.remove("active");
     document.getElementById("eaglesNav").style.display = "block";
-    document.getElementById("newsNav").classList.remove("active");
-    document.getElementById("newsNav").style.display = "block";
     document.getElementById("navTitle").style.display = "block";
 }
 

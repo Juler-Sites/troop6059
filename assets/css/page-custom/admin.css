@@ -6,7 +6,6 @@
 #accountBtn {display: none;}
 #dashboardNav {display: none;}
 #eaglesNav {display: none;}
-#newsNav {display: none;}
 #navTitle {display: none;}
 
 /*--------------------------------------------------------------
@@ -15,13 +14,6 @@
 #addEagle {margin-top: 5px;}
 #removeEagle {margin-top: 45px;}
 #allEagles {vertical-align: top;}
-
-/*--------------------------------------------------------------
-# News Elements
---------------------------------------------------------------*/
-#addArticle {margin-top: 5px;}
-#updateArticle {margin-top: 45px;}
-#allArticles {vertical-align: top;}
 
 /*--------------------------------------------------------------
 # Page Elements
