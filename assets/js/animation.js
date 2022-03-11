@@ -115,12 +115,19 @@
         select('#navbar').classList.toggle('navbar-mobile')
         this.classList.toggle('bi-list')
         this.classList.toggle('bi-x')
+
+        let navigation = document.getElementById('links');
+        let dropdowns = navigation.getElementsByClassName('dropdown');
+
+        for (let i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].getElementsByTagName('ul')[0].classList.add('dropdown-active');
+        }
     })
 
     /**
      * Mobile nav dropdowns activate
      */
-    on('click', '.navbar .dropdown > a', function(e) {
+    on('click', 'mobile-nav-toggle', function(e) {
         if (select('#navbar').classList.contains('navbar-mobile')) {
             e.preventDefault()
             this.nextElementSibling.classList.toggle('dropdown-active')
