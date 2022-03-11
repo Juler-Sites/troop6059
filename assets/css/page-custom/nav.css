@@ -167,6 +167,10 @@
     .navbar ul {
         display: none;
     }
+
+    #header a {
+        color: #000;
+    }
 }
 .navbar-mobile {
     position: fixed;
@@ -196,10 +200,11 @@
     overflow-y: auto;
     transition: 0.3s;
 }
+
 .navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #222222;
+    color: #000;
 }
 .navbar-mobile > ul > li {
     padding: 0;
