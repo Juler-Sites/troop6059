@@ -8,14 +8,15 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
 
 <!DOCTYPE html>
 <html>
-  <head>
+  
+<head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Council Calendar - Troop 6059</title>
+    <title>Troop Announcements title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
+</title>
     <!-- Favicons -->
     <link href="" rel="icon">
     <link href="" rel="apple-touch-icon">
@@ -28,9 +29,8 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
     <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Page Specific CSS File(s) -->
-    <link rel="stylesheet" href="assets/css/page-custom/councilcal.css">
-
-  </head>
+    <link rel="stylesheet" href="assets/css/page-custom/index.css">
+</head>
   <body>
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
@@ -45,42 +45,52 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
         </nav><!-- .navbar -->
 
       </div>
-    </header><!-- End Header -->
-
-    <div class="body-content">
-      <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-2854-4 outer" data-stretch-type="full" style="">
-        <div id="pgc-2854-4-0" class="panel-grid-cell">
-          <div id="panel-2854-4-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="13">
-            <div class="so-widget-sow-headline so-widget-sow-headline-default-221f846e3559-2854">
-              <div class="sow-headline-container ">
-                <h2 class="sow-headline">Council Calendar</h2>
-
-                <div class="decoration">
-                  <div class="decoration-inside">
-
-                  </div>
-                </div>
-
-                <h4 class="sow-sub-headline">How to use Blackpug Calendar:</h4>
-                <p>You can add or remove  Districts in upper left by clicking on Districts</p>
-                <p>You can add Categories by Clicking on Categories.</p>
-                <p>You can change the layout to Grid [Default], Month or List at the top next to the search button.</p>
-                <p>
-                  <strong>NOTICE:</strong>
-                  The below calendar is for the Council Only, it is not the Troop 6059 Calendar. You can find our calendar
-                  <a href="calendar.html">here.</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <iframe loading="strict" src="https://scoutingevent.com/calendar.php?OrgKey=BSA018&amp;view=1&amp;id=478&amp;cat=&amp;loc=&amp;cty=&amp;header=0&amp;useHover=1&amp;useTickler=1&amp;useOfficeClosing=1&amp;filterDistrict=1&amp;filterCategory=1&amp;filterCamp=0&amp;filterCounty=0&amp;allowChange=1&amp;showDays=366&amp;month=&amp;year=" frameborder="0" allowfullscreen="false" width="100%" height="760"></iframe>
-        </div>
-      </div>
-    </div>
-
+    </header> <!-- End Header -->
+    
 
     <script src="assets/js/animation.js" type="text/javascript"></script>
     <script src="assets/js/nav.js" type="module" ></script>
-  </body>
+    <style>
+        .mySlides {display:none;}
+        </style>
+        <body>
+        
+        <h2 class="w3-center">HTML slides</h2>
+        
+        <div class="w3-content" style="max-width:400px">
+          <div class="mySlides w3-container w3-red">
+            <h1><b>Did You Know?</b></h1>
+            <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+          </div>
+        
+          <img class="mySlides" src="https://media.discordapp.net/attachments/897388108591542304/1044398441981292634/b530938503bf4825a0a92b2f4be08296.png?width=393&height=1000" style="width:900%">
+        
+          <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+            <p><span class="w3-tag w3-red">New!</span>
+            <p>6 Crystal Glasses</p>
+            <p>Only $99 !!!</p>
+            <img class="myslides" src="https://media.discordapp.net/attachments/897388108591542304/1044397019013332992/SPOILER_7a4062d7f4b1410ebb66a8414d1590ee.png?width=1617&height=1002">
+          </div>
+        
+          <img class="mySlides" src="https://media.discordapp.net/attachments/897388108591542304/1044398408426864710/ddf39723af5d40dd95f0509bbbad3f1e.png?width=617&height=1002">
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1} 
+          x[slideIndex-1].style.display = "block"; 
+          setTimeout(carousel, 2000); 
+        }
+        </script>  
+</body>
+</body>
 </html>
