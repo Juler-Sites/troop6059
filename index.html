@@ -82,11 +82,170 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
       </p>
     </div>
 
-    <div class="container">
-      <img src="https://www.bing.com/th?id=OIP.qKRncEKnGguDwjR7i0rVxAHaET&w=155&h=98&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" style="width:290px">
-      <p>We will not be meeting during the week of 20 Nov 2022 - 26 Nov 2022 as schools are one Fall Break.</p>
-      <p>  </p>
-    </div> 
+    <script>
+      function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+      }
+       function checkTime(i) { /*I stopped Here*/
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+      }
+      </script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        background: #FFFFFF;
+      }
+      
+      /* Slides */
+      .mySlides {
+        display: none;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+      }
+      
+      /* The dot/bullet/indicator container */
+      .dot-container {
+          text-align: center;
+          padding: 5px;
+          background: #ddd;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 5px;
+        width: 5px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      /* Add a background color to the active dot/circle */
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Add an italic font style to all quotes */
+      q {font-style: italic;}
+      
+      /* Add a blue color to the author */
+      .author {color: cornflowerblue;}
+        /*Current Time*/
+        .up{
+          text-align: center;
+          padding: 5px;
+          background: #ddd;
+          color: cornflowerblue}
+      </style>
+      </head>
+      <body onload="startTime()">
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides" style="display: block;">
+        <h3><b> <center>Please pardon our mess, this site is still undergoing construction</center></b><br> <center> We're working diligently to bring you a better experience. </center> </h3>
+        <p class="author">-Main Exploration Bot v.1.17-</p>
+      </div>
+         
+      <div class="mySlides">
+        <h3><b><center>Meeting on Tues Dec 6 2022, 6:30 PM CST @ First Christian Church </center></b><br><center>1411 Taylor Loop, Little Rock, AR </center></h3>
+        <p class="author">Main Exploration Bot v.1.17</p>
+      </div>
+      
+<div class="mySlides"> 
+        <h3><b><center>Looking for a scout troop?</center></b><br><center>Join our troop by clicking on "Join Now" </center></h3>
+        <p class="author">Main Exploration Bot v.1.17</p>
+      </div>-->      
+    
+      <div class="mySlides">
+        <h3><b><center> Data corrupt or missing, System Halted!</center></b><br><center>0x8fff</center></h3>
+        <p class="author">Main Exploration Bot v.1.17</p>
+      </div>
+
+      <div class="mySlides">
+        <h3><b><center> Data corrupt or missing, System Halted!</center></b><br><center>0x8fff</center></h3>
+        <p class="author">Main Exploration Bot v.1.17</p>
+      </div>
+        
+      <!--<div class="mySlides">
+        <h3><b><center> First Line</center></b><br><center>Second Line</center></h3>
+        <p class="author">Third Line</p>
+      </div>-->
+        
+        
+        
+      <div class="up">
+        <h4>Current Time</h4>
+        <div id="txt">8:16:23</div>
+        </div>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 0;
+      carousel();
+      
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1} 
+          x[slideIndex-1].style.display = "block"; 
+          setTimeout(carousel, 5500); 
+      }
+      </script>
+        
+      </div></body>
 
     <p>If you encounter any issues witht the site, or need information, please do not hesitate to contact us.</p>
   </div>
