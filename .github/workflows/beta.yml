@@ -38,15 +38,11 @@ jobs:
       - name: Authenticate with Firebase
         run: |
           echo "$FIREBASE_SA_KEY" > service-account-key.json
-          firebase use juler-sites --token "$(firebase login:ci --no-localhost --json | jq -r .token)"
+          export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/service-account-key.json
+          firebase use juler-sites
         env:
           FIREBASE_SA_KEY: ${{ secrets.FIREBASE_SA_KEY }}
-      
-      # # Access Firebase
-      # - name: Access Firebase
-      #   run: |
-      #     firebase use juler-sites --token ${{ secrets.FIREBASE_TOKEN }}
-      
+
       # Deploys Firebase
       - name: Deploy to Firebase
         run: firebase deploy --only hosting:troop6059-beta --non-interactive
