@@ -3,8 +3,6 @@ name: Firebase Deploy (Beta)
 on:
   push:
     branches: [ development ]
-  pull_request:
-    branches: [ development ]
   workflow_dispatch:
 
 jobs:
