@@ -33,11 +33,20 @@ jobs:
       # Installs Firebase
       - name: Install Firebase
         run: npm install -g firebase-tools
-        
-      # Access Firebase
-      - name: Access Firebase
+
+      # Authenticate with Service Account Key
+      - name: Authenticate with Firebase
         run: |
-          firebase use juler-sites --token ${{ secrets.FIREBASE_TOKEN }}
+          echo "$FIREBASE_SA_KEY" > service-account-key.json
+          firebase use juler-sites --token "$(firebase login:ci --no-localhost --json | jq -r .token)"
+        env:
+          FIREBASE_SA_KEY: ${{ secrets.FIREBASE_SA_KEY }}
+      
+      # # Access Firebase
+      # - name: Access Firebase
+      #   run: |
+      #     firebase use juler-sites --token ${{ secrets.FIREBASE_TOKEN }}
+      
       # Deploys Firebase
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting:troop6059-beta --non-interactive --token ${{ secrets.FIREBASE_TOKEN }}
+        run: firebase deploy --only hosting:troop6059-beta --non-interactive
