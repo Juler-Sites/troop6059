@@ -1,4 +1,4 @@
-<!--If you are reading this, (I presume you're tech savvy like me and used f12, ctrl+shift+i, right click > Inspect element.. yada yada..) don't even think about copying code from this site, I put alot of work into this site. This site is DMCA protected (Exlcuding fonts, words, etc.) I expect you to use good morals and ethics, and if you use code from this site, or any other content excluding fonts and things, to at least give credit to me the developer of this website.
+<!--If you are reading this, (I presume you're tech savvy like me and used f12, ctrl+shift+i, right click > Inspect element..) don't even think about copying code from this site... although I can't stop you if you do.  I put a lot of work into this site. This site is DMCA protected (Excluding fonts, words, etc.) I expect you to use good morals and ethics, and if you use code from this site, or any other content excluding fonts and things, to at least give credit to me the developer of this website.
 
 DISCLAIMER: I DO NOT OWN THE PROMOTIONAL VIDEOS, IMAGES, OR ANY OTHER PROMOTIONAL CONTENT  WHICH IS USED ON THIS SITE UNLESS OTHERWISE NOTED. ALL COPYRIGHTED CONTENT IS PROPERTY OF ITS RESPECTIVE OWNER(S).
 
@@ -60,185 +60,151 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
           vid.defaultMuted = true;
       </script>
     </div>
+    <div class="main">
+
+      <!-- <a href="https://www.facebook.com/troop6059" target="_blank" rel="noopener noreferrer">https://www.facebook.com/troop6059</a> -->
+
+    <p> Are you looking into joining a scout troop?</p>
+    <p>Do you want to have fun, learn new skills, and make friends? Join Troop 6059 today!</p>
+    
+    <p>
+      We are a friendly and active troop that meets every Tuesday evening from 7:00 to 8:30 at the First Christian Church on Taylor Loop. See the map here. 
+      <!-- Don't forget the link to the map! -->
+    
+      Additionally, we are also part of a larger Scouting family that includes Troop 59 and Cub Pack 57, sponsored by the First Christian Church of Little Rock. If you are interested in Cub Scouting, you can find more information on Pack 57’s website, or contact our Scoutmaster Brad Chilcote at bradc@wddarchitects.com. You can call or text him at <a>501-425-3940.</a> 
+
+      The scout master for troop 6059 is Ember Fenton</p>
+    <p>We hope to see you soon at our next meeting!</p>
+  </div>
+
+  <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+     function checkTime(i) { /*I stopped Here*/
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      background: #FFFFFF;
+    }
+    
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #888;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+    }
+    
+    /* The dot/bullet/indicator container */
+    .dot-container {
+        text-align: center;
+        padding: 5px;
+        background: rgb(172, 166, 157);
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 5px;
+      width: 5px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.8s ease;
+    }
+    
+
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Add an italic font style to all quotes */
+    q {font-style: italic;}
+    
+    /* Add a blue color to the author */
+    .author {color: cornflowerblue;}
+      /*Current Time*/
+      .up{
+        text-align: center;
+        padding: 5px;
+        background: #ddd;
+        color: cornflowerblue}
+    </style>
+    </head>
+    <body onload="startTime()">
+    
+    <div class="slideshow-container">
+    
+      <div class="mySlides"> 
+        <h3><b><center>No meeting Tues. Jan 16!</center></b><br><center>Troop Meetings will resume later in 2024</center></h3>
+        <p class="author">-Main Exploration Bot v.2.24-</p>
+      </div>
+
+
 
     <!-- Future use memory scroller javascript has been moved to `./archive/js/scroller.js` -->
 
-    <div class="w3-display-container">
-      <p>Please pardon the mess, this site is still under construction. If you would like to contact us, please feel free to contact us.
-        <a href="https://www.facebook.com/troop6059" target="_blank" rel="noopener noreferrer">https://www.facebook.com/troop6059</a>
-      </p>
-
-      <p> Are you looking into joining a scout troop?</p>
-      <p>
-        Troop 6059 meets every Tuesday evening from 7:00 pm until 8:30 pm, unless specified otherwise. We meet at First Christian Church on Taylor Loop. Click here for a map. 
-
-      <p>
-        Troop 59, Troop 6059, and First Christian Church of Little Rock are proud to also sponsor Cub Pack 57. For more information, about Pack 57, Please visit
-        <a href="https://sites.google.com/site/pack57lr/">the pack website</a>
-        or email our Scoutmaster Brad Chilcote at
-        <a href="mailto:bradc@wddarchitects.com">bradc@wddarchitects.com</a>
-        or call
-        <a>501-425-3940.</a> You can text <a>501-301-4178</a> as well. 
-      </p>
-    </div>
-
-    <script>
-      function startTime() {
-          var today = new Date();
-          var h = today.getHours();
-          var m = today.getMinutes();
-          var s = today.getSeconds();
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('txt').innerHTML =
-          h + ":" + m + ":" + s;
-          var t = setTimeout(startTime, 500);
-      }
-       function checkTime(i) { /*I stopped Here*/
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-      }
-      </script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-      * {box-sizing: border-box}
-      body {font-family: Verdana, sans-serif; margin:0}
-      
-      /* Slideshow container */
-      .slideshow-container {
-        position: relative;
-        background: #FFFFFF;
-      }
-      
-      /* Slides */
-      .mySlides {
-        display: none;
-        padding: 20px;
-        text-align: center;
-      }
-      
-      /* Next & previous buttons */
-      .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -30px;
-        padding: 16px;
-        color: #888;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
-      
-      /* Position the "next button" to the right */
-      .next {
-        position: absolute;
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      
-      /* On hover, add a black background color with a little bit see-through */
-      .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-        color: white;
-      }
-      
-      /* The dot/bullet/indicator container */
-      .dot-container {
-          text-align: center;
-          padding: 5px;
-          background: rgb(172, 166, 157);
-      }
-      
-      /* The dots/bullets/indicators */
-      .dot {
-        cursor: pointer;
-        height: 5px;
-        width: 5px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.8s ease;
-      }
-      
-
-      /* Add a background color to the active dot/circle */
-      .active, .dot:hover {
-        background-color: #717171;
-      }
-      
-      /* Add an italic font style to all quotes */
-      q {font-style: italic;}
-      
-      /* Add a blue color to the author */
-      .author {color: cornflowerblue;}
-        /*Current Time*/
-        .up{
-          text-align: center;
-          padding: 5px;
-          background: #ddd;
-          color: cornflowerblue}
-      </style>
-      </head>
-      <body onload="startTime()">
-      
-      <div class="slideshow-container">
-      
-        <div class="mySlides"> 
-          <h3><b><center>Our Hearts and Minds go out to those devastated by the tornado that ravaged Little Rock.</center></b><br><center>The city of Little Rock has shelters available to those in need</center></h3>
-          <p class="author">-Main Exploration Bot v.1.17-</p>
-        </div>
-
-        <div class="mySlides">
-          <h3><b><center> If you would like volunteer to aid with cleanup please visit  </center></b><br><center>http://littlerock.gov/volunteer</center></h3>
-          <p class="author">-Main Exploration Bot v.1.17-</p>
-        </div>
-     
-      <div class="mySlides"> 
-        <h3><b><center></center></b><br><center>If you would like to donate to help with recovery efforts, text "GIVE" (without quotes) to 501 - 376 - 1111</center></h3>
-        <p class="author">-Main Exploration Bot v.1.17-</p>
-      </div>-->      
-<!--
-      <div class="mySlides">
-        <h3><b><center> Troop outing on Jan 13 2023!</center></b><br><center>RSVP Via Scoutbook, See link for details https://imgur.com/qfDyUr0 </center></h3>
-        <p class="author">-Main Exploration Bot v.1.17-</p>
-      </div>
-
-         
-      <div class="mySlides">
-        <h3><b><center> Troop outing on Jan 13 2023!</center></b><br><center>RSVP Via Scoutbook, See link for details https://imgur.com/qfDyUr0</center></h3>
-        <p class="author">-Main Exploration Bot v.1.17-</p>
-      </div>
+  
 
       <div class="mySlides">
-        <h3><b><center> Troop outing on Jan 13 2023!</center></b><br><center>RSVP Via Scoutbook, See link for details https://imgur.com/qfDyUr0 </center></h3>
-        <p class="author">-Main Exploration Bot v.1.17-</p>
+        <h3><b><center>Bowling at Prof. Bowl Today in West Little Rock - JAN 13</center></b><br><center></center></h3>
+        <p class="author">-Main Exploration Bot v.2.24-</p>
       </div>
-
-
-      <div class="mySlides">
-        <h3><b><center> Troop outing on Jan 13 2023!</center></b><br><center>RSVP Via Scoutbook, See link for details https://imgur.com/qfDyUr0 </center></h3>
-        <p class="author">-Main Exploration Bot v.1.17-</p>
-      </div>
-
-   <!-- <div class="mySlides">
-        <h3><b><center>Meeting on Tues Dec 6 2022, 6:30 PM CST @ First Christian Church </center></b><br><center>1411 Taylor Loop, Little Rock, AR </center></h3>
-        <p class="author">Main Exploration Bot v.1.17</p>
-      </div> -->
-      
-      <!-- <div class="mySlides">
-        <h3><b><center> Data corrupt or missing, System Halted!</center></b><br><center>0x8fff</center></h3>
-        <p class="author">Main Exploration Bot v.1.17</p>
-      </div> -->
         
-      <!--<div class="mySlides">
-        <h3><b><center> First Line</center></b><br><center>Second Line</center></h3>
-        <p class="author">Third Line</p>
-      </div>-->
-        -->
+      <div class="mySlides">
+        <h3><b><center> PLC, BOR, Advancement </center></b><br><center> JAN 24th</center></h3>
+        <p class="author">Have all materials needed if any ready for Tues Jan 24th</p> 
+        <p>-Main Exploration Bot v.2.24-</p>
+      </div>
+
+      
         
 <!--         
       <div class="up">
@@ -270,11 +236,10 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
         
       </div></body>
 
-    <p>If you encounter any issues witht the site, or need information, please do not hesitate to contact us.</p>
+    <p>If you encounter any issues with the site, or need information, please do not hesitate to contact us.
+      Contacts are available in the "Contact Us Section of our site.</p>
   </div>
-
-    <script src="assets/js/animation.js" type="text/javascript"></script>
     <script src="assets/js/nav.js" type="module" ></script>
   </body>
 </html>
-<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 548px; height: 839px; display: block; flex-grow: 1;" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2xlZ2FjeV90aW1lbGluZV9zdW5zZXQiOnsiYnVja2V0Ijp0cnVlLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3R3ZWV0X2VkaXRfZnJvbnRlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1642286183362248707&amp;lang=en&amp;origin=https%3A%2F%2Fwww.thv11.com%2Farticle%2Fnews%2Flocal%2Fhow-to-help-people-impacted-arkansas-storms%2F91-790d857f-23cf-4546-ad3b-67e29b2448c2&amp;sessionId=dac454183cc67d8619f5ea49bc5e129e51ccce9f&amp;siteScreenName=THV11&amp;theme=light&amp;widgetsVersion=aaf4084522e3a%3A1674595607486&amp;width=548px" data-tweet-id="1642286183362248707"></iframe>
+<!-- <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 548px; height: 839px; display: block; flex-grow: 1;" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2xlZ2FjeV90aW1lbGluZV9zdW5zZXQiOnsiYnVja2V0Ijp0cnVlLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3R3ZWV0X2VkaXRfZnJvbnRlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1642286183362248707&amp;lang=en&amp;origin=https%3A%2F%2Fwww.thv11.com%2Farticle%2Fnews%2Flocal%2Fhow-to-help-people-impacted-arkansas-storms%2F91-790d857f-23cf-4546-ad3b-67e29b2448c2&amp;sessionId=dac454183cc67d8619f5ea49bc5e129e51ccce9f&amp;siteScreenName=THV11&amp;theme=light&amp;widgetsVersion=aaf4084522e3a%3A1674595607486&amp;width=548px" data-tweet-id="1642286183362248707"></iframe> -->
