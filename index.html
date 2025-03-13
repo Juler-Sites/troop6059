@@ -39,7 +39,9 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
 
       <nav id="navbar" class="navbar">
         <ul id="links">
-
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -51,13 +53,27 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
 
     <div class="ScoutMeIn">
       <video height="640px" width="1940" autoplay muted loop controls id="myVideo">
-        <source src="https://cdn2.webdamdb.com/md_kkCnZNLxrS96.mp4" type="video/mp4">
+        <!-- <source src="https://cdn2.webdamdb.com/md_kkCnZNLxrS96.mp4" type="video/mp4"> -->
+        <source src="assets/vid/md_oQghLOtJjyt21cRX.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
 
       <script>
-          var vid = document.getElementById("myVideo");
-          vid.defaultMuted = true;
+        var vid = document.getElementById("myVideo");
+        var videoSources = [
+          "assets/vid/md_oQghLOtJjyt21cRX.mp4",
+          "assets/vid/md_wvAF23qs7N8912fb.mp4",
+          "assets/vid/md_kkCnZNLxrS96.mp4"
+        ];
+        var currentVideoIndex = 0;
+
+        vid.defaultMuted = true;
+
+        vid.addEventListener('ended', function() {
+          currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
+          vid.src = videoSources[currentVideoIndex];
+          vid.play();
+        });
       </script>
     </div>
     <div class="main">
@@ -240,6 +256,11 @@ Additionally, if this site has any issues, eg. responsiveness (meaning it fits t
       Contacts are available in the "Contact Us Section of our site.</p>
   </div>
     <script src="assets/js/nav.js" type="module" ></script>
+    <script>
+      document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+        document.getElementById('navbar').classList.toggle('navbar-mobile');
+      });
+    </script>
   </body>
 </html>
-<!-- <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 548px; height: 839px; display: block; flex-grow: 1;" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2xlZ2FjeV90aW1lbGluZV9zdW5zZXQiOnsiYnVja2V0Ijp0cnVlLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3R3ZWV0X2VkaXRfZnJvbnRlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1642286183362248707&amp;lang=en&amp;origin=https%3A%2F%2Fwww.thv11.com%2Farticle%2Fnews%2Flocal%2Fhow-to-help-people-impacted-arkansas-storms%2F91-790d857f-23cf-4546-ad3b-67e29b2448c2&amp;sessionId=dac454183cc67d8619f5ea49bc5e129e51ccce9f&amp;siteScreenName=THV11&amp;theme=light&amp;widgetsVersion=aaf4084522e3a%3A1674595607486&amp;width=548px" data-tweet-id="1642286183362248707"></iframe> -->
+<!-- <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 548px; height: 839px; display: block; flex-grow: 1;" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tFIjoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3JlZnNyY19zZXNzaW9uIjp7ImJ1Y2tFIjoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tFIjoidHJ1ZV9iaXRyYXRlIiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2xlZ2FjeV90aW1lbGluZV9zdW5zZXQiOnsiYnVja2V0Ijp0cnVlLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3R3ZWV0X2VkaXRfZnJvbnRlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1642286183362248707&amp;lang=en&amp;origin=https%3A%2F%2Fwww.thv11.com%2Farticle%2Fnews%2Flocal%2Fhow-to-help-people-impacted-arkansas-storms%2F91-790d857f-23cf-4546-ad3b-67e29b2448c2&amp;sessionId=dac454183cc67d8619f5ea49bc5e129e51ccce9f&amp;siteScreenName=THV11&amp;theme=light&amp;widgetsVersion=aaf4084522e3a%3A1674595607486&amp;width=548px" data-tweet-id="1642286183362248707"></iframe> -->
